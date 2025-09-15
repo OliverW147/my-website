@@ -1,4 +1,4 @@
-# Oliver W – Personal Website
+# Personal Website
 
 This is a simple personal website showcasing some of my projects and interests. It’s not really intended as a full resume.
 
