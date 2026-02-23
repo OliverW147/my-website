@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <meta name="description" content="Oliver W - First Year Computer Science Student. Portfolio and about page.">
+    <title>Oliver Way - CompSci @ Adelaide Uni</title>
+    <meta name="description" content="Oliver Way - CompSci @ Adelaide Uni">
+    <link rel="canonical" href="https://oliver-w.com/">
+    
+    <meta name="google-site-verification" content="FCEo5O9sUcYjDK1hHOLrrrcRuerXRSezwC9ydaUENno" />
+
     <link rel="icon" type="image/png" href="images/logo.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +38,6 @@
             background-color: var(--background-color);
             color: var(--text-primary);
             margin: 0;
-            padding: 20px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             transition: background-color 0.3s ease, color 0.3s ease;
@@ -43,13 +46,14 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            border-left: 1px solid var(--border-color);
-            border-right: 1px solid var(--border-color);
+            border: 2px solid #c0c0c0;
+			border-radius: 6px;
+			overflow: hidden;
         }
 
         header {
             padding: 24px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 2px solid #c0c0c0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -72,7 +76,7 @@
         .profile {
             text-align: center;
             padding: 60px 20px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 2px solid #c0c0c0;
         }
 
         .profile h1 {
@@ -91,7 +95,7 @@
 
         section {
             padding: 40px 24px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 2px solid #c0c0c0;
         }
 
         section:last-child {
@@ -189,6 +193,18 @@
         .icon-button:hover {
             background-color: var(--border-color);
         }
+		
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		
+		.page-wrapper {
+			min-height: 100vh;       /* fill the viewport */
+			display: flex;
+			justify-content: center;  /* horizontal center, optional */
+			align-items: center;      /* vertical center */
+		}
     </style>
     
     <script>
@@ -202,6 +218,7 @@
     </script>
 </head>
 <body>
+<div class="page-wrapper">
     <div class="container">
         <header>
             <div class="location">
@@ -225,86 +242,42 @@
 
         <main>
             <section class="profile">
-                <h1>Oliver W</h1>
-                <h2>First Year Computer Science Student</h2>
+                <h1>Oliver Way</h1>
+                <h2>CompSci @ Adelaide Uni</h2>
             </section>
 
             <section id="about">
                 <h3>About Me</h3>
-                <p>Hi, I'm a first-year Computer Science Advanced student with a six year background in programming. I enjoy solving a variety of problems and applying my skills to real-world challenges.</p>
-            </section>
-
-            <section id="projects">
-                <h3>Things I've Built</h3>
-                <div class="item">
-                    <h4>Minecraft-Based Computer</h4>
-                    <p>In Year 11, I designed and built a computer inside Minecraft. It has 16 bytes of writable memory and over 128 bytes of readable memory and it could successfully calculate the Fibonacci sequence up to around the 14th term. I had to consider timings and the instruction set as I was building it, and I also needed to sketch and create logic diagrams to help me build the actual components in Minecraft. It has very much deepened my understanding of logic and computer architecture.</p>
-                </div>
-                <div class="item">
-                    <h4>3D Engine Prototype</h4>
-                    <p>During Year 10, I developed a prototype 3D engine from scratch in Python. It can render dots of various sizes depending on the camera’s position and viewing angles in the world.</p>
-                </div>
-                <div class="item">
-                    <h4>Computer Vision for F1 in Schools</h4>
-                    <p>As part of the F1 in Schools finals competition in Sydney, I made a Python app that synced three laptops with cameras to detect how many fingers were held up, automatically changing the slides.</p>
-                </div>
-                <div class="item">
-                    <h4>Sudoku App</h4>
-                    <p>For my degree's introductory MATLAB course, I made a terminal-based Sudoku player and solver.</p>
-                </div>
-                <div class="item">
-                    <h4>Drafting App</h4>
-                    <p>I built a C++ drafting app for a mobile game that uses an MCTS-like algorithm with a predictor to determine good character picks.</p>
-                </div>
-                <div class="item">
-                    <h4>Other Projects</h4>
-                    <p>These projects and some of my many other experiments can be found on my GitHub (linked below).</p>
-                </div>
-            </section>
-
-            <section id="interests">
-                <h3>Interests & Hobbies</h3>
-                <p>Outside of uni, work, and my projects, I sometimes look for other puzzles or new skills to learn. Some things I enjoy include:</p>
-                <ul class="styled-list">
-                    <li><strong>Main Hobbies:</strong> Playing soccer and piano. I used to play piano in bands during school along with club soccer. I still play both frequently.</li>
-                    <li><strong>Puzzles:</strong> Solving the Rubik's Cube (including blindfolded), Sudoku, and Minesweeper.</li>
-                    <li><strong>Programming Challenges:</strong> I'm currently active in the Adelaide University Competitive Programming League. I have competed in the ICPC, and I also enjoy working through problems on LeetCode (73 solves at the time I wrote this).</li>
-                    <li><strong>Memory Challenges:</strong> In the past I have enjoyed memory challenges such as memorising the periodic table or completing the chimp test.</li>
-                </ul>
-            </section>
-
-            <section id="education">
-                <h3>Studies</h3>
-                <div class="item">
-                    <h4>University (2024 - Current)</h4>
-                    <p>I'm currently studying a Bachelor of Computer Science (Advanced). I also completed a couple of university-level courses (MATLAB & C, Object-Oriented Programming) while still in high school through the Headstart Scholarship program, which have allowed me to take DSA 1 and currently DSA 2 in my first year of uni.</p>
-                </div>
-                <div class="item">
-                    <h4>Academic Awards</h4>
-                    <p>Throughout my schooling, I received some awards including the Australian Institute of Physics' Future Physicist Award for my efforts in Physics, and an award for the highest predicted Digital Tech grade in my final year of high school.</p>
-                </div>
+                <p>I am currently a Bachelor of Computer Science (Advanced) student at Adelaide University. I also work as the Technical Coordinator at Scoped Out, where I develop data collection pipelines and business integrations. I have a strong interest in low-level computing, which I demonstrate through projects such as a C++ game engine, a 3D renderer, and an 8-bit computer simulation. I also actively participate in competitive programming competitions to extend my knowledge of algorithms and data structures.</p>
             </section>
 
             <section id="contact">
                 <h3>Links</h3>
                 <div class="contact-info">
-                    <a href="mailto:&#109;&#101;&#64;&#111;&#108;&#105;&#118;&#101;&#114;&#45;&#119;&#46;&#99;&#111;&#109;" class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon" aria-hidden="true">
-                            <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-                            <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-                        </svg>
-                        <span>&#109;&#101;&#64;&#111;&#108;&#105;&#118;&#101;&#114;&#45;&#119;&#46;&#99;&#111;&#109;</span>
-                    </a>
+					<a href="Oliver_Way_Resume.pdf" target="_blank" class="contact-item">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon" aria-hidden="true">
+							<path fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625zM7.5 15a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 017.5 15zm.75 2.25a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5h-7.5z" clip-rule="evenodd" />
+							<path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
+						</svg>
+						<span>Resume</span>
+					</a>
                     <a href="https://github.com/OliverW147" target="_blank" rel="noopener noreferrer" class="contact-item">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon" aria-hidden="true">
                             <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
                         </svg>
                         <span>github.com/OliverW147</span>
                     </a>
+					<a href="https://www.linkedin.com/in/oliverway1/" target="_blank" rel="noopener noreferrer" class="contact-item">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon" aria-hidden="true">
+							<path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1 4.98 2.12 4.98 3.5zM.5 8h3.98v12H.5V8zm7.5 0h3.82v1.71h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.79 2.66 4.79 6.11V20H16.5v-5.3c0-1.26-.02-2.88-1.76-2.88-1.76 0-2.03 1.37-2.03 2.79V20H8V8z"/>
+						</svg>
+						<span>linkedin.com/in/oliverway1</span>
+					</a>
                 </div>
             </section>
         </main>
     </div>
+</div>
 
     <script>
         function updateTime() {
